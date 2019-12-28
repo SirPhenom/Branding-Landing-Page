@@ -1,0 +1,39 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.line {
+    width: 150px;
+    height: 2px;
+}
+.line1 {
+    width: 250px;
+    height: 5px;
+    margin: auto;
+    /* border-radius: 30%; */
+}
+.line2 {
+    width: 1200px;
+    height: 2px;
+    margin: auto;
+    border-radius: 30%;
+    background: rgb(39, 39, 39) !important;
+}
+.first-col:hover {
+background: aqua;
+cursor: pointer;
+color: white !important;
+}
+.pad {
+    padding-right: 80px;
+}
+#header {
+    background: url(/Img/atmosphere-blue-sky-bright-cloud-216629.jpg)center/cover no-repeat fixed;
+}
+.img {
+    position: relative;
+}
+.imageText {
+    position: absolute;
+    bottom: 0;
+}
