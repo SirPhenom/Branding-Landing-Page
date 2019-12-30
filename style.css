@@ -2,9 +2,22 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+#header {
+    background:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.5)), url(/Img/bcg1.jpg)center/cover no-repeat fixed;
+}
+#second {
+    background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url(/Img/people.png)bottom no-repeat fixed;
+  
+}
+.bg-grey {
+    background: rgb(223, 222, 222);
+}
 .line {
     width: 150px;
     height: 2px;
+}
+.bder {
+    border-radius: 70px !important;
 }
 .line1 {
     width: 250px;
@@ -12,26 +25,28 @@ body {
     margin: auto;
     /* border-radius: 30%; */
 }
-.line2 {
-    width: 1200px;
-    height: 2px;
-    margin: auto;
-    border-radius: 30%;
-    background: rgb(39, 39, 39) !important;
-}
 .first-col:hover {
-background: aqua;
-cursor: pointer;
-color: white !important;
+    background: aqua;
+    cursor: pointer;
+    color: blue !important;
+}
+
+.list:hover {
+    background: rgb(177, 174, 174);
+    cursor: pointer;
+    color: black !important;
 }
 .pad {
     padding-right: 80px;
 }
-#header {
-    background: url(/Img/atmosphere-blue-sky-bright-cloud-216629.jpg)center/cover no-repeat fixed;
-}
+
 .img {
     position: relative;
+}
+.header-pic {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .imageText {
     position: absolute;
