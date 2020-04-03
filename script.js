@@ -1,28 +1,39 @@
-
-function change(){
-  btn = document.getElementById('butn');
-  oldBtnContent = document.getElementById('plus');
-  butnText = document.getElementById('butntext');
-  if (plus.innerHTML === "+") {
-    plus.innerHTML = "-";
-    btn.classList.add('font-weight-bold');
-    btn.classList.add('text-primary')
-    
-    butnText.classList.remove('d-none');
+const awesomeTab = document.getElementById('awesome-tab');
+awesomeTab.onclick = function (event) {
+  if (event.target.id === 'butn') {
+    let butnText = event.target.nextElementSibling
+    // console.log()
+    plus = event.target.children[0];
+    if (plus.innerHTML === "+") {
+      plus.innerHTML = '-';
+      butnText.classList.remove('d-none');
+    }
+    else {
+      plus.innerHTML = '+';
+      butnText.classList.add('d-none');
+    }
   }
-  else {plus.innerHTML = "+";
-  btn.classList.remove('font-weight-bold');
-  butnText.classList.add('d-none');
-  btn.classList.remove('text-primary')
 }
-//   btn.replaceChild(minus,plus);
 
-//   butnText = document.getElementById('butntext');
-//   butnText.classList.remove('d-none')
-};
 
-function h0ver(){
-  var img= document.getElementsByClassName('img');
-  img[0].style.height = "100px"
-  this.style.height = "100px"
+const imgHover = document.getElementsByClassName('img');
+const imgText = document.querySelectorAll('carousel-item');
+
+
+for (let i = 0; i < imgHover.length; i++) {
+  imgHover[i].addEventListener('mouseover', () => {
+    if (imgHover[i].style.height !== '100px') {
+      imgHover[i].style.height = '100px';
+      imgText[i].classList.add('active');
+      imgHover[i].addEventListener('mouseout', () => {
+        imgHover[i].style.height = '80px';
+        // imgText[i].classList.remove('active');
+      })
+    }
+    else {
+      imgHover[i].addEventListener('mouseout', () => {
+      imgHover[i].style.height = '80px';
+      })
+    }
+  })
 }
